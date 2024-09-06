@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "helloo_backend": {
+      "main": "src/helloo_backend/main.mo",
+      "type": "motoko"
+    },
+    "helloo_frontend": {
+      "dependencies": [
+        "helloo_backend"
+      ],
+      "source": [
+        "src/helloo_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "helloo_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
